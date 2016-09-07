@@ -35,14 +35,14 @@ public class Invoice
 		//print the array
 		 System.out.println("Receipt");
 		 for (int i=0;i <counter; i++){
-		 //System.out.printf("The price is %.02d \t:\n",myPrices[i]);
+		 System.out.printf("The price is %.02f\n",myPrices[i]);
 		 }
-		// System.out.printf("%02d\tSubtotal\n",sum);
-		 System.out.println(sum*t);
+		 System.out.printf("%.02f \tSubtotal\n",sum);
+		 System.out.printf("%.02f \tTax\n",sum*t);
 		 double tot = sum + (sum*t);
 		 
-		 //System.out.printf("%02d\tSubtotal\n",tot);
-		 System.out.println(tot);
+		 System.out.printf("%.02f\tGrand Total\n",tot);
+		 //System.out.println(tot);
 		// TODO Auto-generated method stub
 	}
 }
