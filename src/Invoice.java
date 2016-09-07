@@ -33,16 +33,16 @@ public class Invoice
 			 
 		 }
 		//print the array
-		 System.out.println("Receipt");
+		 System.out.println("-----------------------------\n");
+		 System.out.println("\tReceipt\n");
 		 for (int i=0;i <counter; i++){
-		 System.out.printf("The price is %.02f\n",myPrices[i]);
+		 System.out.printf("   %.02f  %d Item\n",myPrices[i],i+1);
 		 }
-		 System.out.printf("%.02f \tSubtotal\n",sum);
-		 System.out.printf("%.02f \tTax\n",sum*t);
+		 System.out.printf("   %.02f  Subtotal\n",sum);
+		 System.out.printf("   %.02f   Tax\n",sum*t);
 		 double tot = sum + (sum*t);
 		 
-		 System.out.printf("%.02f\tGrand Total\n",tot);
-		 //System.out.println(tot);
+		 System.out.printf("   %.02f  Grand Total\n",tot);
 		// TODO Auto-generated method stub
 	}
 }
